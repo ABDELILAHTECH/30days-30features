@@ -6,7 +6,7 @@ export default function SuggestionsList({productsFiltred, isOpen, activeIndex}) 
     return (
     <div>
    {isOpen &&
-    <ul>
+    <ul className="sug-list">
       {
         productsFiltred.length >= 1 
         ? productsFiltred.map((product,index)=>

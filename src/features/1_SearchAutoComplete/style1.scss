@@ -1,15 +1,16 @@
-.active{
-  background-color: black;
-  color: white;
-}
+
 input{
   padding: 5px 10px;
 }
-ul{
+ul.sug-list{
   margin-top: 5px;
   border: 1px solid;
-  li{
+  li.sug-item{
     border: 1px solid;
     padding: 5px;
+  }
+  .active{
+  background-color: black;
+  color: white;
   }
 }

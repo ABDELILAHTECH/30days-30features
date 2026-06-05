@@ -1,7 +1,7 @@
 import SearchInput from "./SearchInput";
 import SuggestionsList from "./SuggestionsList";
 import { useEffect, useState } from "react"
-import "./style1.css"
+import "./style1.scss"
 
 export default function SearchAutoComplete() {
     const products  = 

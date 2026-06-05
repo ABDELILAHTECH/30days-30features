@@ -4,7 +4,7 @@ export default function SuggestionsItem({product, isActive}) {
     isActive && alert(product)
   }
   return (
-    <li className={isActive ? "active" : ""} onClick={handleClick}>
+    <li className={`sug-item ${isActive ? "active" : ""}`} onClick={handleClick}>
        {product}
     </li>
   )
