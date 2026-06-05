@@ -1,0 +1,12 @@
+*{
+  color: black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
