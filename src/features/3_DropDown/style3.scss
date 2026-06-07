@@ -1,0 +1,95 @@
+
+.dropdown-container{
+    position: relative;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 10px;
+    .dropdown-title{
+        font-size: 14px;
+        position: absolute;
+        background-color: white;
+        padding:0 5px;
+        top:2px;
+        left: 30px;
+        transition: 0.5s; 
+    }
+    .down{
+        top: 30px;
+
+    }
+    .up{
+        top:2px;
+    }
+    .dropdown-trigger{
+        cursor: pointer;
+        border:1px solid;
+        padding: 15px 20px;        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .result{
+            display: flex;
+            align-items: center;
+            gap:10px;
+        }
+        button{
+            
+        }
+        svg{
+            width: 20px;
+        }
+    }
+    .dropdown-list{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid;
+        margin-top: 10px;
+        animation: listAnimation;
+        animation-duration: 0.3s;
+        @keyframes listAnimation {
+            from{
+                transform: translateY(-30px); 
+                height: 0px;
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .list-item{
+            padding: 10px 20px;                  
+            display: flex;
+            align-items: center;
+            gap:10px;
+            cursor: pointer;
+            &:hover, &.active{
+                background-color: rgba(0, 0, 0, 0.2);   
+            }
+            svg{
+                background-color: transparent;
+            }
+            
+        }
+        .ingredient-item{
+            display: flex;
+            align-items: center;
+            label{
+                padding: 10px 0px;
+                flex-grow: 1;
+            }
+            .checkbox-container{
+                position: relative; 
+                margin: 10px 10px;
+                margin-left: 10px;
+                padding: 5px 10px;
+                width: 10px;
+                height: 10px;
+                input{
+                    position: absolute;
+                    inset: 0;
+                }
+            }
+        }
+    }
+}

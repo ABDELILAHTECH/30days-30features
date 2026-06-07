@@ -46,9 +46,6 @@ export default function DeleteConfirmModal() {
         window.addEventListener("keydown",handleKeyDown)
         document.body.style.overflow = "hidden";
       }
-      else{
-        document.body.style.overflow = "auto";
-      }
         return () => { 
           window.removeEventListener("keydown",handleKeyDown)
           document.body.style.overflow = "auto";
