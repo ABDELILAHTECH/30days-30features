@@ -1,0 +1,48 @@
+.toast-msgs-container{
+    position: relative;
+    padding-top: 100px;
+    svg{
+        width: 20px;
+    }
+    .toasts{
+        position: fixed;
+        left: 50%;     
+        transform: translateX(-50%);
+        top: 20px;
+    }
+    .toast{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        gap: 10px;
+        padding: 8px 13px;
+        animation: toastAnimation 0.3s;
+        @keyframes toastAnimation {
+            from{
+                transform: translateY(-20px);         
+            }
+            to{
+                
+            }
+        }
+        span, svg path{
+            color: white;
+
+        }
+    }
+    .toasts-btns{
+       margin-top: 20px;
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       align-items: center;
+       button{
+        font-size: 18px;
+        width: 120px;
+        padding: 10px 0;
+        border-radius: 12px; 
+        color: white;
+       }
+    }
+}
