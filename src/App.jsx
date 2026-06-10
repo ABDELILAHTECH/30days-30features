@@ -4,6 +4,7 @@ import DeleteConfirmModal from "./features/2_DeleteConfirmationMod/DeleteConfirm
 import DropDown from "./features/3_DropDown/DropDowns"
 import ToastSystem from "./features/4_ToastSystem/ToastSystem"
 import Tabs from "./features/5_Tabs/Tabs"
+import NotificationCenter from "./features/6_NotificationCenter/NotificationCenter"
 export default function App() {
   return (
     <div>
@@ -11,8 +12,8 @@ export default function App() {
       {/*<DeleteConfirmModal />*/}
       {/*<DropDown />*/}
       {/*<ToastSystem />*/}
-      <Tabs />
-      {/**/}
+      {/*<Tabs />*/}
+      <NotificationCenter />
       {/**/}
       {/**/}
       {/**/}

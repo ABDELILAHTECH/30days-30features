@@ -1,0 +1,124 @@
+.notification-center{
+    width: 420px;
+    margin-top: 100px;
+    svg{
+        width: 30px;
+    }
+    nav{
+        text-align: end;
+    }
+    .notification-btn{
+        position: relative;
+        span{
+            position: absolute;
+            background-color: red;
+            width: 10px;
+            height: 10px;
+            top: -6px;
+            right: -5px;
+            border-radius: 100%;
+        }
+    }
+    .notifications-container{
+        background-color: black;
+        @keyframes notificationAnimation {
+            from {
+              opacity: 0;
+              transform: translateY(-15px);
+            }
+           
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+        }   
+        h3,h4,span,p{ 
+            color: white;
+        }
+        svg{
+            fill: white;
+        }
+        h3{
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border-bottom: 1px solid;
+        }
+        .notifications-list{
+            animation: notificationAnimation 0.3s;
+            height: 300px;
+            overflow-y: scroll;
+            li{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                padding:10px 20px;
+                &:hover{
+                    background-color: rgb(87, 80, 80);
+                }
+                .notification-icon{
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 100%;
+                    svg{
+                        width: 40px;
+                        stroke: white;
+                    }
+                }
+                .success{
+                    background-color: green;
+                    svg{
+                        stroke: white;
+                        fill: green;
+                    }
+                }
+                .info{
+                    background-color: rgba(0, 0, 255, 0.873);
+                    svg{
+                        stroke: white;
+                        fill: rgba(0, 0, 255, 0.873);
+                    }
+                }
+                .warning{
+                    background-color: orange;
+                    svg{
+                        stroke: white;
+                        fill: orange;
+                    }
+                }
+                .error{
+                    background-color: red;
+                    svg{
+                        stroke:white;
+                        fill: red;
+                    }
+                }
+                
+                .notification-info{
+                    width: 220px;
+                    .notification-content{
+                        font-size: 15px;
+                        margin: 2px 0;
+                    }
+                    span{
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: rgb(161, 152, 152);
+                    }
+                }
+            }
+            .has-read{
+                    opacity: 0.7;
+                    .has-read-icon{
+                        opacity: 0;
+                        transition:  0.3s;
+                    }
+                    &:hover .has-read-icon{
+                        opacity: 1;
+                    }
+            }
+        }
+
+    }
+}
