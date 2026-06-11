@@ -5,6 +5,7 @@ import DropDown from "./features/3_DropDown/DropDowns"
 import ToastSystem from "./features/4_ToastSystem/ToastSystem"
 import Tabs from "./features/5_Tabs/Tabs"
 import NotificationCenter from "./features/6_NotificationCenter/NotificationCenter"
+import Carousel from "./features/7_ImageCarousel/Carousel"
 export default function App() {
   return (
     <div>
@@ -13,8 +14,8 @@ export default function App() {
       {/*<DropDown />*/}
       {/*<ToastSystem />*/}
       {/*<Tabs />*/}
-      <NotificationCenter />
-      {/**/}
+      {/*<NotificationCenter />*/}
+      <Carousel />
       {/**/}
       {/**/}
       {/**/}

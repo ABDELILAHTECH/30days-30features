@@ -1,0 +1,125 @@
+.carousel{
+    margin-top: 50px;
+    width: 80vw;
+    img{
+        object-fit: cover;
+        object-position: top;
+    }
+    .imgs-list{
+        display: flex;
+        gap: 10px;
+    }
+    svg{
+        width: 50%;
+        stroke-width: 3px;
+        stroke:white; 
+    }
+    .imgs-list{
+           justify-content: start;
+           height: 300px;  
+           width: 100%;
+           overflow-x: scroll; 
+           scrollbar-width: none;
+           li{
+              height: 240px;
+              img{
+                width: 400px;  
+                height: 100%;
+              }
+            }
+    }
+    .carousel1-container{
+        position: relative;
+        width: 80%;
+        height: 380px;
+        margin: auto;
+
+        .triggers-next-prev{
+            display: flex;
+            justify-content: end;
+            padding: 10px 0;
+            button{
+                background-color: black;
+                opacity: 0.5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 35px;
+                width: 35px;
+                margin-left: 10px;
+                border-radius: 100%;   
+                transition: opacity 0.3s;
+                &:hover{
+                    opacity: 1;
+                }            
+            }
+        }
+        .indicators{
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            li button{
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                background-color: black;
+                opacity: 0.4;
+                transition: all 0.3s;
+                &:hover{
+                    opacity: 1;
+                    transform: scale(1.1);
+                } 
+            }
+            button.active{
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+    }
+
+    
+    
+    .carousel2-container{
+        position: relative;
+        width: 80%;
+        height: 340px;
+        overflow: hidden;
+        margin: 70px auto; 
+        // .imgs-list{
+        //     width: 100%;
+        //     overflow-x: hidden;   
+        //     li{
+        //         img{
+        //             width: 200px;
+        //         }
+        //     }
+        // } 
+        .triggers2-list{
+            width: 400px;
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 10px; 
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            li{
+                button{
+                    display: flex;
+                    width: 100px;
+                    height: 100%;
+                    background-color: transparent;
+                }
+                button.active{
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
