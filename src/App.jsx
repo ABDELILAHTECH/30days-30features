@@ -6,6 +6,7 @@ import ToastSystem from "./features/4_ToastSystem/ToastSystem"
 import Tabs from "./features/5_Tabs/Tabs"
 import NotificationCenter from "./features/6_NotificationCenter/NotificationCenter"
 import Carousel from "./features/7_ImageCarousel/Carousel"
+import Board from "./features/8_KanbanBoard/Board"
 export default function App() {
   return (
     <div>
@@ -15,9 +16,9 @@ export default function App() {
       {/*<ToastSystem />*/}
       {/*<Tabs />*/}
       {/*<NotificationCenter />*/}
-      <Carousel />
+      {/*<Carousel />*/}
       {/**/}
-      {/**/}
+      <Board />
       {/**/}
       {/**/}
       {/**/}
