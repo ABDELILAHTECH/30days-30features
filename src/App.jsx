@@ -7,6 +7,7 @@ import Tabs from "./features/5_Tabs/Tabs"
 import NotificationCenter from "./features/6_NotificationCenter/NotificationCenter"
 import Carousel from "./features/7_ImageCarousel/Carousel"
 import Board from "./features/8_KanbanBoard/Board"
+import TagsSection from "./features/9_TagInput/TagsSection"
 export default function App() {
   return (
     <div>
@@ -17,8 +18,8 @@ export default function App() {
       {/*<Tabs />*/}
       {/*<NotificationCenter />*/}
       {/*<Carousel />*/}
-      {/**/}
-      <Board />
+      {/*<Board />*/}
+      <TagsSection />
       {/**/}
       {/**/}
       {/**/}

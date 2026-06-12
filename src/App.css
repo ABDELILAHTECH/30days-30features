@@ -6,6 +6,7 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 body{
   display: flex;
@@ -15,3 +16,19 @@ body{
 button{
   cursor: pointer;
 }
+svg{
+  width: 20px;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* Legacy fallback */
+  clip-path: inset(50%) !important;          /* Modern standard */
+  white-space: nowrap !important;
+  border: 0 !important;
+}   

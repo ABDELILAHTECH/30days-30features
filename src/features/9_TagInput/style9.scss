@@ -1,0 +1,59 @@
+.tags-section{
+    background-color: rgba(34, 35, 33, 0.948);
+    margin-top: 30px;
+    padding: 20px;
+    min-height: 200px;
+    max-width: 340px;
+    button{
+        background-color: chartreuse;
+        border-radius: 4px;
+        font-size: 18px;
+    }
+    h2{
+        margin-bottom: 8px;
+        color: chartreuse;
+    }
+    .add-tag-container{
+        background-color: chartreuse;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        justify-content: space-between;
+        input{
+            font-size: 16px;
+        }
+        button{
+            background-color: black;
+            color: chartreuse;    
+            padding: 5px 15px;    
+        }
+    }
+    .tags-container{
+        .tags-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding:15px 10px;
+        }
+        .tag-item{
+            border: chartreuse 1px solid;
+            color: chartreuse;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 6px 10px;
+        }
+        .delete-tag-btn{
+            background-color: transparent;
+            display: flex;
+            flex-grow: 1;
+            svg{
+                stroke: chartreuse;
+            }
+        }
+        .delete-all-button{
+            margin-top: 10px;
+            padding: 5px 15px;
+        }
+    }
+}
