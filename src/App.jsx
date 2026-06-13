@@ -1,4 +1,5 @@
 import "./App.css"
+import ProductsPage from "./features/10_Pagination/ProductsPage"
 import SearchAutoComplete from "./features/1_SearchAutoComplete/SearchAutoComplete"
 import DeleteConfirmModal from "./features/2_DeleteConfirmationMod/DeleteConfirmModal"
 import DropDown from "./features/3_DropDown/DropDowns"
@@ -19,8 +20,8 @@ export default function App() {
       {/*<NotificationCenter />*/}
       {/*<Carousel />*/}
       {/*<Board />*/}
-      <TagsSection />
-      {/**/}
+      {/*<TagsSection />*/}
+      <ProductsPage />
       {/**/}
       {/**/}
       {/**/}
