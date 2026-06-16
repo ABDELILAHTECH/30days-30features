@@ -1,0 +1,28 @@
+.container{
+    height: 100vh;
+
+}
+.sticky-scroll-container{
+    height: 100%;
+    display: flex;
+    gap: 50px;
+    img{
+
+        width: 400px;
+        position: sticky;
+        top: 200px;
+    }
+    .mac-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        .mac-card{
+            position: sticky;
+            top: 300px;
+            background-color: #F5F5F7;
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+        }
+    }
+}

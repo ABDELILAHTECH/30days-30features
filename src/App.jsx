@@ -1,6 +1,7 @@
 import "./App.css"
 import ProductsPage from "./features/10_Pagination/ProductsPage"
 import SupportTickets from "./features/11_SupportTickets/SupportTickets"
+import StickyScroll1 from "./features/12_StickyScroll1/StickyScroll1"
 import SearchAutoComplete from "./features/1_SearchAutoComplete/SearchAutoComplete"
 import DeleteConfirmModal from "./features/2_DeleteConfirmationMod/DeleteConfirmModal"
 import DropDown from "./features/3_DropDown/DropDowns"
@@ -23,8 +24,8 @@ export default function App() {
       {/*<Board />*/}
       {/*<TagsSection />*/}
       {/*<ProductsPage />*/}
-      <SupportTickets />
-      {/**/}
+      {/*<SupportTickets />*/}
+      <StickyScroll1 />
       {/**/}
       {/**/}
       {/**/}
